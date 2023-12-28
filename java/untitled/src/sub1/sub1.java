@@ -1,4 +1,4 @@
-
+package sub1;
 
 public class sub1 {
     public static void main(String[] args) {

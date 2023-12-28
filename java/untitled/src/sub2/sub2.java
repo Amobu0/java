@@ -1,4 +1,4 @@
-//import 출처
+package sub2;//import 출처
 import java.util.Scanner;
 
 public class sub2 {
