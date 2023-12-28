@@ -33,6 +33,8 @@ public class ArrayTest {
         }
             System.out.println();
 
+
+
         //1차원
         int [] scores = {80,60,78,62,92};
         int total = 0;
@@ -42,9 +44,44 @@ public class ArrayTest {
         }
         System.out.println("socres 전체 합 : "+ total);
 
+
+
         //2차원
+        int [][] arr2d = {{1, 2, 3, 4},
+                          {5, 6, 7, 8},
+                          {9, 10, 11, 12}};
+
+
+        for (int [] arr2dd : arr2d ) {
+            for(int arr2ddd : arr2dd){
+                if(arr2ddd == 1 || arr2ddd==5 || arr2ddd==12){
+                    System.out.println("2차원 배열 : "+ arr2ddd);
+                }
+            }
+        }
+
 
 
         //3차원
+        int [][][] arr3d = {{{1, 2, 3, 4},
+                          {5, 6, 7, 8},
+                          {9, 10, 11, 12}},
+                         {{13, 14, 15, 16},
+                          {17, 18, 19, 20},
+                          {21, 22, 23, 24}},
+                         {{25, 26, 27, 28},
+                          {29, 30, 31, 32},
+                          {33, 34, 35, 36}}};
+
+
+        for (int [][] arr3dd : arr3d ) {
+            for(int [] arr3ddd : arr3dd){
+                for(int arr3dddd: arr3ddd){
+                    if(arr3dddd == 36 || arr3dddd==1 || arr3dddd==19){
+                        System.out.println("3차원 배열 : "+ arr3dddd);
+                   }
+                }
+            }
+        }
     }
 }
