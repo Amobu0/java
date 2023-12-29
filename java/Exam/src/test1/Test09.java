@@ -11,10 +11,10 @@ public class Test09 {
             }else {
                 count--;
             }
-            for(int j = 1 ; j <= 5-count ; j++) {
+            for(int j = 1 ; j <= 5 - count ; j++) {
                 System.out.print(" ");
             }
-            for(int k =1 ; k<=2*count-1 ; k++) {
+            for(int k =1 ; k <= 2 * count - 1 ; k++) {
                 System.out.print("*");
             }
             System.out.print("\n");
