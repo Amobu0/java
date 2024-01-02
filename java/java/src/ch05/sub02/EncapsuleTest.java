@@ -33,7 +33,7 @@ public class EncapsuleTest {
         System.out.println();
 
 
-        Account kb =new Account("국민은행", "12-345-6789", "홍길동", 10000);
+        Account kb =Account.getInstance("국민은행", "12-345-6789", "홍길동", 10000);
 
 //        kb.bank= "국민은행";
 //        kb.id = "12-345-6789";

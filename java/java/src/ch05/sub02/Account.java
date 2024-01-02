@@ -2,18 +2,24 @@ package ch05.sub02;
 
 public class Account {
 
+
+    public static Account getInstance(String bank, String id, String name, int balance) {
+        return new Account(bank, id, name, balance);
+
+    }
+    private Account(String bank, String id, String name, int balance){
+        this.bank = bank;
+        this.id = id;
+        this.name = name;
+        this.balance = balance;
+    }
+
     // 속성
     private String bank;
     private String id;
     private String name;
     private int balance;
 
-    public Account(String bank, String id, String name, int balance) {
-        this.bank = bank;
-        this.id = id;
-        this.name = name;
-        this.balance = balance;
-    }
 
     public String getBank() {
         return bank;

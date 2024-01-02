@@ -1,7 +1,11 @@
 package ch05.sub01;
 
 public class Car {
-    
+    private static Car instance = new Car();
+    public static Car getInstance() {
+        return instance;
+    }
+    private Car() {}
     // 속성(필드)
     String name;
     String color;

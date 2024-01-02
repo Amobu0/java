@@ -1,6 +1,12 @@
 package ch05.sub01;
 
 public class Account {
+    private static Account instance = new Account();
+
+    public static Account getInstance() {
+        return instance;
+    }
+    private Account() {}
 
     // 속성
     String bank;

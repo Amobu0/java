@@ -9,7 +9,8 @@ public class ClassTest {
     public static void main(String[] args) {
 
         // Car 객체 생성
-        Car sonata= new Car();
+        Car sonata = Car.getInstance();
+        Car avante = Car.getInstance();
 
         sonata.name = "소나타";
         sonata.color = "흰색";
@@ -22,11 +23,7 @@ public class ClassTest {
 
         System.out.println();
 
-
         // Car 객체 선언, 생성, 초기화, 상호작용
-        Car avante;
-        avante = new Car();
-
         avante.name = "아반테";
         avante.color = "검은색";
         avante.speed = 0;
@@ -39,16 +36,29 @@ public class ClassTest {
 
 
         //Account 객체 생성/초기화/상호작용
-        Account kb = new Account();
+        Account kb = Account.getInstance();
+        Account busan = Account.getInstance();
 
         kb.bank = "국민은행";
-        kb.id = "101-123-1234";
-        kb.name = "홍길동";
+        kb.id = "국민-01";
+        kb.name = "국민-홍길동";
         kb.balance= 10000;
 
         kb.deposit(40000);
         kb.withdraw(30000);
         kb.show();
+        System.out.println();
+
+
+        busan.bank = "부산은행";
+        busan.id = "부산-01";
+        busan.name = "부산-홍길동";
+        busan.balance = 90000;
+
+
+        busan.deposit(40000);
+        busan.withdraw(30000);
+        busan.show();
 
     }
 }
