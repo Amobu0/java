@@ -15,6 +15,8 @@ package ch05.sub03;
   - singleton 객체를 사용해서 메모리 절약과 성능 향상을 기대
  */
 
+import ch05.sub04.StockAccount;
+
 class Increment {
     private int num1;
     public static int num2;
