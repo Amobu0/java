@@ -2,19 +2,22 @@ package ch02.sec01;
 
 public class PrimitiveAndStringConversionExample {
 
-    static String str;
     public static void main(String[] args) {
-        str = "10";
-        byte value1 = Byte.parseByte(str);
+        int value1 = Integer.parseInt("10");
+        double value2 = Double.parseDouble("3.14");
+        boolean value3 = Boolean.parseBoolean("true");
 
-        str = "200";
-        short value2 = Short.parseShort(str);
+        System.out.println("value1 = " + value1);
+        System.out.println("value2 = " + value2);
+        System.out.println("value3 = " + value3);
 
-        str = "3000000";
-        int value3 = Integer.parseInt(str);
+        String str1 = String.valueOf(value1);
+        String str2 = String.valueOf(value2);
+        String str3 = String.valueOf(value3);
 
-        str = "400000000000000";
-        long value4 = Long.parseLong(str);
+        System.out.println("str1 = " + str1);
+        System.out.println("str2 = " + str2);
+        System.out.println("str3 = " + str3);
 
 
     }
