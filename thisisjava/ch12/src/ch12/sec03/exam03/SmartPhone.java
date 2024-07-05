@@ -1,4 +1,4 @@
-package ch12.sec03.exam3;
+package ch12.sec03.exam03;
 
 public class SmartPhone {
     private String company;
