@@ -10,7 +10,7 @@ public class GenericExample {
 
         //Box<Integer> box2 = new Box<>();
         Box<Integer> box2 = new Box<>();
-        box2.content = 100;
+        box2.content = (Integer) 100;
         int value = box2.content;
         System.out.println(value);
     }
